@@ -1,0 +1,24 @@
+p 1: Stop/Disable kubernetes
+
+In Docker Desktop:
+ Settings->Kubernetes-> Disable Kubenetes
+ Then wait until Kubernetes has completely stopped
+ 
+ Step 2: First remove all containers
+ docker rm -f $(docker ps -aq)
+ 
+ Remove all images
+ 
+ docker rmi -f $(docker images -aq)
+ 
+ Then clean everything else:
+ 
+ docker system prune -a --volumes -f
+ 
+ docker builder prune -a -f
+
+ 
+ Step 3: Verify
+ 
+ docker ps -a
+ docker images
