@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple JS Example</title>
+</head>
+<body>
+    <h1 id="heading">Original Heading</h1>
+    <button id="btn" onclick="changeText()">Click Me</button>
+    <script>
+    function changeText() {
+        document.getElementById("heading").innerText =
+         "Hello, Selenium!";
+         }
+         </script>
+</body>
+</html>
