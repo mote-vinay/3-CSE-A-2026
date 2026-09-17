@@ -5,7 +5,7 @@
     <title>Simple JS Example</title>
 </head>
 <body>
-    <h1 id="heading">Original Heading</h1>
+    <h1 id="heading">Original heading</h1>
     <button id="btn" onclick="changeText()">Click Me</button>
     <script>
     function changeText() {
